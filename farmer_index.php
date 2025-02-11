@@ -165,7 +165,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 	<div class="footer">
 		<div class="container">
 			<div class="copyright text-center">
-				<p>&copy; 2020 Agriculture Portal. All rights reserved | Design by NHZP  </a></p>
+				<p>&copy; 2020 Agriculture Portal. All rights reserved | Design by Byte_Busters  </a></p>
 			</div>
 		</div>
 	</div>

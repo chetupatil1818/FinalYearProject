@@ -5,6 +5,10 @@ $username="root";
 $password="";
 $dbname="agriculture_portal";
 $conn = mysqli_connect($servername, $username, $password, $dbname);
+// $conn = mysqli_connect("localhost", "root", "", "agriculture_portal");
+if (!$conn) {
+    die("Database connection failed: " . mysqli_connect_error());
+}
 
 //echo("connection");
 if(isset($_POST ['farmerlogin'])) {
@@ -20,7 +24,10 @@ if(isset($_POST ['farmerlogin'])) {
     $_SESSION['farmer_login_user']=$farmer_email; // Initializing Session
     
 
-    header("location: ../twostep.php"); // Redirecting To Other Page
+    header("location: ../farmer_index.php"); // Redirecting To Other Page
+    //window.location='farmer_index.php';
+
+    
     } 
     else {
     echo "<script language='javascript'>alert('Username or Password is invalid');</script>"; 
